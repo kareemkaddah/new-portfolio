@@ -8,7 +8,7 @@
   overflow: hidden;
   max-width: 100%;
 
-  width: 300px;
+  width: 250px;
   height: 450px;
   transition: transform 0.3s ease;
   padding: 0.7rem;
@@ -27,13 +27,12 @@
 
   .project-content {
     h3 {
-      font-size: 1.25rem;
       margin-bottom: 0.5rem;
       color: var(--gray-900);
     }
 
     p {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       color: var(--gray-700);
     }
   }

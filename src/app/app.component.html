@@ -68,12 +68,17 @@
     margin: auto;
   }
   .projects-wrapper {
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.2rem;
-    width: 55%;
+    width: 100%; /* or keep 55% if you prefer */
     padding: 1rem 0;
+    justify-content: space-between;
+  }
+  .ai-agent {
+    background-color: red;
+    width: 100px;
+    height: 100px;
   }
 </style>
 
@@ -95,7 +100,7 @@
       <h2>Work Experience</h2>
       <app-info-box
         companyName="Platepal"
-        duration="01/2024"
+        duration="01/2024-01/2025"
         imageUrl="https://getplatepal.de/logo.svg"
         description="Co-founder & Software Developer"
       ></app-info-box>
@@ -116,7 +121,7 @@
       <h2>Education</h2>
       <app-info-box
         companyName="RWTH Aachen"
-        duration="Startgin from 04/2025"
+        duration="04/2025 - On Going"
         description="Master's Degree in Computer Science (MSC)"
         imageUrl="https://banner2.cleanpng.com/20180624/liy/aazkx0oue.webp"
       ></app-info-box>
@@ -159,6 +164,20 @@
           projectName="Zooloretto"
           projectDescription="Developed a digital adaptation of the board game Zooloretto, featuring strategic zoo-building mechanics, AI opponents, and a user-friendly interface. The project involved translating traditional board game rules into a digital format, including tile management, enclosure optimization, and scoring systems, while maintaining the original's charm and depth."
           projectImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ozoy4PwsMVkBh4loyTlwEEe0PTxJ1grNoA&s"
+        ></app-projects>
+      </div>
+      <!-- Currently working on  -->
+      <h2>Currently working on</h2>
+      <div class="projects-wrapper">
+        <app-projects
+          projectName="Social media app"
+          projectDescription="Description of the Social media app"
+          projectImage=""
+        ></app-projects>
+        <app-projects
+          projectName="AI Agents"
+          projectDescription="Infos aboutt he AI Agents that im working with and what technologies im using"
+          projectImage=""
         ></app-projects>
       </div>
       <!-- Languages -->
@@ -231,10 +250,5 @@
     </svg>
   </a>
 </div>
-<!-- Imprint and Privacy Policy -->
-<div class="infos">
-  <a class="link" routerLink="imprint">imprint </a>
 
-  <a routerLink="privacy-policy"> Privacy Policy </a>
-</div>
-<router-outlet> </router-outlet>
+<!-- Imprint and Privacy Policy -->
