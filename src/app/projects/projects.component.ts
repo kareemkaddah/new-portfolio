@@ -10,4 +10,5 @@ export class ProjectsComponent {
   @Input() projectDescription: string = '';
   @Input() projectImage: string = '';
   @Input() projectName: string = '';
+  @Input() usedLanguage!: string[];
 }

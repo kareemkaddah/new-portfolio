@@ -5,6 +5,10 @@
     <div class="project-content">
       <h3>{{ projectName }}</h3>
       <p>{{ projectDescription }}</p>
+
+      @for (language of usedLanguage; track language) {
+      <div class="skill-box">{{ language }}</div>
+      }
     </div>
   </div>
 </div>
