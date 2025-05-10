@@ -4,19 +4,6 @@
   padding: 0;
 }
 
-/* .container {
-  min-height: 250px;
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  gap: 5px;
-} */
 .container {
   display: flex;
   flex-wrap: wrap; /* Ensures wrapping when needed */
